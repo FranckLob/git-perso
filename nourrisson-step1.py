@@ -125,7 +125,8 @@ while True:
 while True:
     age = input ("Veuillez entrer l'age de votre nourrisson en mois (entre 0 et 60 mois) : ")
     if is_number_int(age)==True:
-        break
+        if int(age)>=0 and int(age)<=60:
+            break
 # poids en kg : numérique obligatoirement
 while True:
     poids = input ("Veuillez entrer le poids de votre nourrisson en kg : ")
